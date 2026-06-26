@@ -82,6 +82,28 @@ if st.button("Predict Risk"):
 
     st.metric("Estimated Risk", f"{risk_percent}%")
     st.progress(probability)
+    st.subheader("Why This Prediction?")
+
+if glucose > averages.loc[1, "Glucose"]:
+    st.write("🧪 Your glucose is above the average diabetic value in the dataset.")
+elif glucose > averages.loc[0, "Glucose"]:
+    st.write("🧪 Your glucose is above the average non-diabetic value.")
+else:
+    st.write("🧪 Your glucose is closer to the non-diabetic average.")
+
+if bmi > averages.loc[1, "BMI"]:
+    st.write("⚖️ Your BMI is above the average diabetic value in the dataset.")
+elif bmi > averages.loc[0, "BMI"]:
+    st.write("⚖️ Your BMI is above the average non-diabetic value.")
+else:
+    st.write("⚖️ Your BMI is closer to the non-diabetic average.")
+
+if age > averages.loc[1, "Age"]:
+    st.write("🎂 Your age is above the average diabetic age in the dataset.")
+elif age > averages.loc[0, "Age"]:
+    st.write("🎂 Your age is above the average non-diabetic age.")
+else:
+    st.write("🎂 Your age is closer to the non-diabetic average.")
 
     st.subheader("How Your Values Compare")
 
