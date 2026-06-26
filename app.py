@@ -29,6 +29,16 @@ averages = df.groupby("Outcome")[features].mean()
 
 st.title("🩺 Diabetes Risk Predictor")
 st.info("Educational project only, not a medical diagnosis.")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.metric("Dataset", "768 Patients")
+
+with col2:
+    st.metric("Model", "Logistic Regression")
+
+with col3:
+    st.metric("Accuracy", f"{round(accuracy * 100, 1)}%")
 with st.sidebar:
     st.header("📊 Project Info")
     st.write("**Model:** Logistic Regression")
