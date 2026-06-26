@@ -59,7 +59,7 @@ bmi = st.slider("BMI", 0.0, 80.0, 30.0)
 age = st.slider("Age", 0, 120, 30)
 pregnancies = st.slider("Pregnancies", 0, 20, 1)
 
-if st.button("🩺 Check Diabetes Risk")
+if st.button("🩺 Check Diabetes Risk"):
     user_data = pd.DataFrame({
         "Glucose": [glucose],
         "BMI": [bmi],
