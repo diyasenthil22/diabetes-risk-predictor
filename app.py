@@ -111,7 +111,7 @@ elif pregnancies > averages.loc[0, "Pregnancies"]:
 else:
     st.write("🤰 **Pregnancies:** Your pregnancy count is closer to the average value observed among non-diabetic patients in the dataset.")
 
-    st.subheader("How Your Values Compare")
+    st.subheader("📊 Compare Your Health Measurements")
 
     comparison = pd.DataFrame({
         "Your Value": [glucose, bmi, age, pregnancies],
