@@ -5,6 +5,11 @@ An interactive machine learning web app that estimates diabetes likelihood using
 ## 🌐 Live Demo
 
 https://diabetes-risk-predictor-xvulinwxwv8wbv3kqfykxs.streamlit.app/#why-this-prediction
+
+## 📸 App Preview
+
+![Diabetes Risk Predictor](images/app-preview.png)
+
 ## 📌 Overview
 
 This project uses Python and machine learning to explore patterns in a diabetes dataset. I first analyzed relationships between health measurements and diabetes, then built a Logistic Regression model and deployed it as an interactive Streamlit web app.
