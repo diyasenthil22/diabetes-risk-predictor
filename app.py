@@ -28,7 +28,6 @@ accuracy = accuracy_score(y_test, model.predict(X_test))
 averages = df.groupby("Outcome")[features].mean()
 
 st.title("🩺 Diabetes Risk Predictor")
-st.write("Estimate diabetes likelihood using a machine learning model trained on health data.")
 st.info("Educational project only — not a medical diagnosis.")
 with st.sidebar:
     st.header("📊 Project Info")
