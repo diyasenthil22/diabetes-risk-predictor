@@ -84,32 +84,32 @@ if st.button("🩺 Check Diabetes Risk"):
     st.progress(probability)
     st.subheader("Why This Prediction?")
 
-if glucose > averages.loc[1, "Glucose"]:
-    st.write("🧪 **Glucose:** Your glucose level is higher than the average value observed among diabetic patients in the dataset.")
-elif glucose > averages.loc[0, "Glucose"]:
-    st.write("🧪 **Glucose:** Your glucose level is higher than the average value observed among non-diabetic patients in the dataset.")
-else:
-    st.write("🧪 **Glucose:** Your glucose level is closer to the average value observed among non-diabetic patients in the dataset.")
+    if glucose > averages.loc[1, "Glucose"]:
+        st.write("🧪 **Glucose:** Your glucose level is higher than the average value observed among diabetic patients in the dataset.")
+    elif glucose > averages.loc[0, "Glucose"]:
+        st.write("🧪 **Glucose:** Your glucose level is higher than the average value observed among non-diabetic patients in the dataset.")
+    else:
+        st.write("🧪 **Glucose:** Your glucose level is closer to the average value observed among non-diabetic patients in the dataset.")
 
-if bmi > averages.loc[1, "BMI"]:
-    st.write("⚖️ **BMI:** Your BMI is higher than the average value observed among diabetic patients in the dataset.")
-elif bmi > averages.loc[0, "BMI"]:
-    st.write("⚖️ **BMI:** Your BMI is higher than the average value observed among non-diabetic patients in the dataset.")
-else:
-    st.write("⚖️ **BMI:** Your BMI is closer to the average value observed among non-diabetic patients in the dataset.")
+    if bmi > averages.loc[1, "BMI"]:
+        st.write("⚖️ **BMI:** Your BMI is higher than the average value observed among diabetic patients in the dataset.")
+    elif bmi > averages.loc[0, "BMI"]:
+        st.write("⚖️ **BMI:** Your BMI is higher than the average value observed among non-diabetic patients in the dataset.")
+    else:
+        st.write("⚖️ **BMI:** Your BMI is closer to the average value observed among non-diabetic patients in the dataset.")
 
-if age > averages.loc[1, "Age"]:
-    st.write("🎂 **Age:** Your age is higher than the average age observed among diabetic patients in the dataset.")
-elif age > averages.loc[0, "Age"]:
-    st.write("🎂 **Age:** Your age is higher than the average age observed among non-diabetic patients in the dataset.")
-else:
-    st.write("🎂 **Age:** Your age is closer to the average age observed among non-diabetic patients in the dataset.")
-if pregnancies > averages.loc[1, "Pregnancies"]:
-    st.write("🤰 **Pregnancies:** Your pregnancy count is higher than the average value observed among diabetic patients in the dataset.")
-elif pregnancies > averages.loc[0, "Pregnancies"]:
-    st.write("🤰 **Pregnancies:** Your pregnancy count is higher than the average value observed among non-diabetic patients in the dataset.")
-else:
-    st.write("🤰 **Pregnancies:** Your pregnancy count is closer to the average value observed among non-diabetic patients in the dataset.")
+    if age > averages.loc[1, "Age"]:
+        st.write("🎂 **Age:** Your age is higher than the average age observed among diabetic patients in the dataset.")
+    elif age > averages.loc[0, "Age"]:
+        st.write("🎂 **Age:** Your age is higher than the average age observed among non-diabetic patients in the dataset.")
+    else:
+        st.write("🎂 **Age:** Your age is closer to the average age observed among non-diabetic patients in the dataset.")
+    if pregnancies > averages.loc[1, "Pregnancies"]:
+        st.write("🤰 **Pregnancies:** Your pregnancy count is higher than the average value observed among diabetic patients in the dataset.")
+    elif pregnancies > averages.loc[0, "Pregnancies"]:
+        st.write("🤰 **Pregnancies:** Your pregnancy count is higher than the average value observed among non-diabetic patients in the dataset.")
+    else:
+        st.write("🤰 **Pregnancies:** Your pregnancy count is closer to the average value observed among non-diabetic patients in the dataset.")
 
     st.subheader("📊 Compare Your Health Measurements")
 
