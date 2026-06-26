@@ -136,12 +136,13 @@ st.write(
     "The app uses glucose level, BMI, age, and pregnancies to estimate diabetes likelihood."
 )
 
-st.header("Future Improvements")
+st.header("📈 Key Findings")
+
 st.markdown("""
-- Add more health variables
-- Compare multiple machine learning models
-- Improve prediction accuracy
-- Add more visualizations
-- Make the app more mobile-friendly
+- Glucose showed the strongest relationship with diabetes.
+- BMI was higher on average among diabetic patients.
+- Older individuals tended to have a higher likelihood of diabetes.
+- Pregnancy count showed a weaker relationship than glucose or BMI.
+- A Logistic Regression model achieved about 75% accuracy using four health features.
 """)
 st.caption("Built by Diya Senthil using Python, pandas, scikit-learn, and Streamlit.")
