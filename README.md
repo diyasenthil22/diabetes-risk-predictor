@@ -55,14 +55,12 @@ The model achieved about **75% accuracy** on test data.
 ## ⚠️ Disclaimer
 
 This app is for educational and portfolio purposes only. It is not a medical diagnosis or medical advice.
-## 📂 Repository Structure
+## 📁 Repository Structure
 
-app.py              # Streamlit web application
+```text
+app.py             # Streamlit web application
+requirements.txt   # Python dependencies
+README.md          # Project documentation
+```
 
-requirements.txt    # Python dependencies
-
-README.md           # Project documentation
-
-## 👩‍💻 Built By
-
-Diya Senthil
+## 👩‍💻 Built By Diya Senthil
