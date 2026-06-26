@@ -15,6 +15,9 @@ An interactive machine learning web app that estimates diabetes likelihood using
 ## 📌 Overview
 
 This project uses Python and machine learning to explore patterns in a diabetes dataset. I first analyzed relationships between health measurements and diabetes, then built a Logistic Regression model and deployed it as an interactive Streamlit web app.
+## 📊 Dataset
+
+This project uses the Pima Indians Diabetes Dataset, a widely used dataset for machine learning research. It contains health measurements from 768 female patients, including glucose level, BMI, age, pregnancies, and diabetes outcome.
 
 ## ✨ Features
 
