@@ -30,6 +30,28 @@ averages = df.groupby("Outcome")[features].mean()
 st.title("🩺 Diabetes Risk Predictor")
 st.write("Estimate diabetes likelihood using a machine learning model trained on health data.")
 st.info("Educational project only — not a medical diagnosis.")
+with st.sidebar:
+    st.header("📊 Project Info")
+    st.write("**Model:** Logistic Regression")
+    st.write(f"**Accuracy:** {round(accuracy * 100, 2)}%")
+    st.write("**Features Used:**")
+    st.write("• Glucose")
+    st.write("• BMI")
+    st.write("• Age")
+    st.write("• Pregnancies")
+
+    st.divider()
+
+    st.header("🧠 What I Built")
+    st.write(
+        "I explored a diabetes dataset, created visualizations, tested prediction rules, "
+        "and built a machine learning web app using Streamlit."
+    )
+
+    st.divider()
+
+    st.header("⚠️ Disclaimer")
+    st.write("This app is for educational purposes only and is not medical advice.")
 
 st.header("Enter Health Information")
 
