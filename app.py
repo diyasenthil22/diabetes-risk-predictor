@@ -128,4 +128,20 @@ else:
 st.divider()
 st.write("**Model:** Logistic Regression")
 st.write(f"**Model Accuracy:** {round(accuracy * 100, 2)}%")
+st.divider()
+
+st.header("About the Dataset")
+st.write(
+    "This model was trained using a diabetes dataset with 768 patient records. "
+    "The app uses glucose level, BMI, age, and pregnancies to estimate diabetes likelihood."
+)
+
+st.header("Future Improvements")
+st.markdown("""
+- Add more health variables
+- Compare multiple machine learning models
+- Improve prediction accuracy
+- Add more visualizations
+- Make the app more mobile-friendly
+""")
 st.caption("Built by Diya Senthil using Python, pandas, scikit-learn, and Streamlit.")
