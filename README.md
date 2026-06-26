@@ -1,6 +1,7 @@
 # 🩺 Diabetes Risk Predictor
 
 An interactive machine learning web app that estimates diabetes likelihood using glucose level, BMI, age, and pregnancies.
+Developed as an independent machine learning and data science project to explore how health measurements can be used to estimate diabetes likelihood.
 
 ## 🌐 Live Demo
 
