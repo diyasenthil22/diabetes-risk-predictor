@@ -4,8 +4,6 @@ An interactive machine learning web app that estimates diabetes likelihood from 
 
 ## 🌐 Live Demo
 
-## 🌐 Live Demo
-
 👉 [Launch the Diabetes Risk Predictor](https://your-streamlit-link.streamlit.app)
 
 ## 📸 App Preview
