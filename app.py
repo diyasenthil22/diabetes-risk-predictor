@@ -59,6 +59,7 @@ bmi = st.slider("BMI", 0.0, 80.0, 30.0)
 age = st.slider("Age", 0, 120, 30)
 pregnancies = st.slider("Pregnancies", 0, 20, 1)
 
+
 if st.button("🩺 Check Diabetes Risk"):
     user_data = pd.DataFrame({
         "Glucose": [glucose],
@@ -131,9 +132,6 @@ if st.button("🩺 Check Diabetes Risk"):
 
     st.dataframe(comparison)
 
-st.divider()
-st.write("**Model:** Logistic Regression")
-st.write(f"**Model Accuracy:** {round(accuracy * 100, 2)}%")
 st.divider()
 
 st.header("About the Dataset")
