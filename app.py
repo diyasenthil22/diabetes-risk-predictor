@@ -131,6 +131,24 @@ if st.button("🩺 Check Diabetes Risk"):
     }, index=features)
 
     st.dataframe(comparison)
+st.divider()
+st.header("📊 Feature Importance")
+
+coefficients = pd.DataFrame({
+    "Feature": features,
+    "Importance": abs(model.coef_[0])
+})
+
+coefficients = coefficients.sort_values(by="Importance", ascending=True)
+
+st.bar_chart(
+    coefficients.set_index("Feature")
+)
+
+st.write(
+    "This chart shows which features the Logistic Regression model relied on most when making predictions. "
+    "Higher values indicate stronger influence in the model."
+)
 
 st.divider()
 
