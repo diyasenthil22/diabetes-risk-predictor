@@ -438,10 +438,8 @@ st.bar_chart(
 )
 
 st.caption(
-    "These are the absolute coefficients from the Logistic "
-    "Regression model. Because the features use different "
-    "measurement scales, they should not be interpreted as "
-    "a definitive ranking of feature importance."
+    "Larger coefficients indicate a stronger effect on the model's predictions, "
+    "but values are affected by each feature's measurement scale."
 )
 
 # --------------------------------------------------
